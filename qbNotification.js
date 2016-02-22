@@ -4,16 +4,16 @@
     if(typeof define === 'function' && define.amd) {
         // AMD environment
         define(function() {
-            return factory(global, global.document);
+            return factory(global);
         });
     } else if (typeof module !== 'undefined' && module.exports) {
         // CommonJS-like
-        module.exports = factory(global, global.document);
+        module.exports = factory(global);
     } else {
         // Browser environment (root is window)
-        global.QBNotification = factory(global, global.document);
+        global.QBNotification = factory(global);
     }
-} (typeof window !== 'undefined' ? window : this, function (window, document) {
+} (typeof window !== 'undefined' ? window : this, function (window) {
     var Notify = window.Notification || window.navigator.webkitNotifications,
         ERRORS = {
             title: 'QBNotification(): first arg (title) must be not empty string.',
@@ -103,8 +103,6 @@
      * @param  {Function} cb [callback function which get state as params. Optional]
      */
     QBNotification.requestPermission = function(cb) {
-        var self = this;
-
         if(!QBNotification.isSupported()) {
             throw new Error(ERRORS.no_support);
         }

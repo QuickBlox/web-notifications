@@ -45,6 +45,13 @@ QBNotification.isSupported()
 QBNotification.needsPermission()
 ```
 
+#### Contribution
+For test we use JSHint, so
+```javascript
+npm install -g jshint
+npm test
+```
+before you push yours changes
 
 #### Helpful links
 [W3](https://www.w3.org/TR/notifications/),

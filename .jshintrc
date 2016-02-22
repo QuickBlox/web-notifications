@@ -8,4 +8,11 @@
     "unused": "strict",
 
     "browser": true,
+
+    "globals": {
+        "define": false,
+        "module": false,
+        "console": false,
+        "Notification": false
+    }
 }
