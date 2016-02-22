@@ -14,7 +14,7 @@
     "url": "git+https://github.com/QuickBlox/web-notifications.git"
   },
   "keywords": [
-    "Notification"
+    "Notification", "web-notifications"
   ],
   "author": "quickblox team",
   "license": [
