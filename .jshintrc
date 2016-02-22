@@ -1,0 +1,11 @@
+// https://github.com/jshint/jshint/blob/master/examples/.jshintrc
+{
+    "curly": true,
+    "eqeqeq": true,
+    "forin": true,
+    "quotmark": "single",
+    "undef": true,
+    "unused": "strict",
+
+    "browser": true,
+}
