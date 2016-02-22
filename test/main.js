@@ -24,11 +24,9 @@
 
     /** init */
     if( QBNotification.isSupported() ) {
-        console.log('YES');
         avaible.textContent = 'available';
         avaible.classList.add('green');
     } else {
-        console.log('NO');
         avaible.textContent = 'not available';
         avaible.classList.add('red');
     }
