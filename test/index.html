@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>qbNotification</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="form" class="form">
+        <div class="form_row">
+            <div class="form_element">
+                <input type="text" name="title" id="title" class="form_inp" placeholder="Title of Notification" title="Title must be not empty string">
+            </div>
+        </div>
+
+        <dif class="form_row">
+            <div class="form_element">
+                <textarea name="body" id="body" class="form_inp" placeholder="Body of Notification"></textarea>
+            </div>
+        </dif>
+
+        <div class="form_row form_row_2">
+            <div class="form_cell">
+                <div class="form_element">
+                    <input type="text" name="tag" id="tag" class="form_inp" placeholder="Tag of Notification">
+                </div>
+            </div>
+
+            <div class="form_cell">
+                <div class="form_element">
+                    <input type="number" name="timeout" id="timeout" class="form_inp" min="0" step="1" value="" placeholder="Timeout">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form_element">
+            <button class="btn" type="reset">Reset all fields</button>
+            <button class="btn" type="button" id="requestPermission">Request permission</button>
+            <button class="btn" type="submit" name="button">Show notification</button>
+        </div>
+    </form>
+
+  <script src="../qbNotification.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
