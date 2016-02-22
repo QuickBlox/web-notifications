@@ -1,8 +1,8 @@
-# QBNotification
+# web-Notifications (QBNotification)
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
-See QBNotification in action in folder test/* 
+See QBNotification in action in folder test/*
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
