@@ -2,6 +2,7 @@
     'use strict';
 
     var form = document.querySelector('#form'),
+        avaible = form.querySelector('#available'),
         reqPermBtn = document.querySelector('#requestPermission');
 
     /** Callbacks */
@@ -20,6 +21,18 @@
     function onShowNotificationCb () {
         console.log('onShowNotificationCb');
     }
+
+    /** init */
+    if( QBNotification.isSupported() ) {
+        console.log('YES');
+        avaible.textContent = 'available';
+        avaible.classList.add('green');
+    } else {
+        console.log('NO');
+        avaible.textContent = 'not available';
+        avaible.classList.add('red');
+    }
+
 
     /** Submit */
     form.addEventListener('submit', function(e) {

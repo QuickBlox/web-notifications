@@ -63,7 +63,11 @@ html {
 
 textarea {
     resize:vertical;
-    font-family: inherit;
+}
+textarea,
+input,
+select {
+	font-family: inherit;
     font-size: inherit;
     line-height: inherit;
 }
@@ -71,6 +75,26 @@ textarea {
 .form {
     width: 400px;
     margin: 25px auto;
+}
+
+.form_title {
+	margin: 0 0 15px 0;
+	font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    color: #404040;
+}
+
+.form_title #available {
+	font-size: 14px;
+	vertical-align: super;
+}
+
+.green {
+	color: #00d82d;
+}
+.red {
+	color: #ff4235;
 }
 
 .form_row {

@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>qbNotification</title>
+  <title>QBNotification</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="shortcut icon" href="https://quickblox.com/favicon.ico">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form id="form" class="form">
+        <h1 class="form_title">
+            QBNotification
+            <span id="available">*</span>
+            by&nbsp;QBteam
+        </h1>
+
         <div class="form_row">
             <div class="form_element">
                 <input type="text" name="title" id="title" class="form_inp" placeholder="Title of Notification" title="Title must be not empty string">
@@ -38,10 +46,11 @@
             </div>
         </div>
 
-
         <div class="form_element">
             <button class="btn" type="reset">Reset all fields</button>
+
             <button class="btn" type="button" id="requestPermission">Request permission</button>
+
             <button class="btn" type="submit" name="button">Show notification</button>
         </div>
     </form>
