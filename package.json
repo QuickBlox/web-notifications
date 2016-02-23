@@ -1,6 +1,6 @@
 {
   "name": "web-notifications",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper for using the Web Notifications API",
   "main": "qbNotification.js",
   "directories": {
@@ -20,7 +20,7 @@
   "license": [
     {
       "type": "BSD",
-      "url": "https://github.com/QuickBlox/quickblox-javascript-sdk/blob/master/LICENSE"
+      "url": "https://github.com/QuickBlox/web-notifications/blob/master/LICENSE"
     }
   ],
   "bugs": {
