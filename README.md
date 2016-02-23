@@ -2,7 +2,7 @@
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
-See QBNotification in action in folder test/*
+See it in action in folder test/*
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
@@ -15,7 +15,7 @@ QBNotification.requestPermission(function(state) {
     console.log('State is changed: ' + state);
 });
 ```
-Then you create instance of QBNotification.
+Then you should create instance of QBNotification.
 ```javascript
 /**
  * @param {[string]} title   [Title of notification. Required value]
@@ -23,7 +23,7 @@ Then you create instance of QBNotification.
  */
 var notify = new QBNotification(title, options);
 ```
-Then you can show notification by
+Then you can show notification via
 ```javascript
 notify.show()
 ```
