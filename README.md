@@ -7,15 +7,15 @@ See QBNotification in action in folder test/*
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
 ## Usage
-Module written like Universal Module Definition, so use everywhere.
+Module is written like Universal Module Definition, so use everywhere.
 
-Before show notification you need get [permission](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission) from user by
+Before show a notification you need to get [permission](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission) from a user by
 ```javascript
 QBNotification.requestPermission(function(state) {
     console.log('State is changed: ' + state);
 });
 ```
-Then you create Instance of QBNotification.
+Then you create instance of QBNotification.
 ```javascript
 /**
  * @param {[string]} title   [Title of notification. Required value]
@@ -23,24 +23,23 @@ Then you create Instance of QBNotification.
  */
 var notify = new QBNotification(title, options);
 ```
-Then you could to show notification by
+Then you can show notification by
 ```javascript
 notify.show()
 ```
 Also you have:
-
 ```javascript
 /**
  * [isSupported - check is Notification available in environment]
- * @return {Boolean} [false if not available]
+ * @return {Boolean} [flag]
  */
 QBNotification.isSupported()
 ```
 
 ```javascript
 /**
- * [isSupported - check if user add you permission to show Notification]
- * @return {Boolean} [false if not available]
+ * [needsPermission - check if user add you permission to show Notification]
+ * @return {Boolean} [flag]
  */
 QBNotification.needsPermission()
 ```
