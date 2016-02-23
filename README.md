@@ -2,7 +2,7 @@
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
-See it in action in folder test/*
+See it in action in folder **test**
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
@@ -18,7 +18,7 @@ QBNotification.requestPermission(function(state) {
 Then you should create instance of QBNotification.
 ```javascript
 /**
- * @param {[string]} title   [Title of notification. Required value]
+ * @param {[string]} title [Title of notification. Required.]
  * @param {[type]} options [Additional options: standard params + timeout]
  */
 var notify = new QBNotification(title, options);
@@ -30,7 +30,7 @@ notify.show()
 Also you have:
 ```javascript
 /**
- * [isSupported - check is Notification available in environment]
+ * [isSupported - check whether Notification API available in environment or not]
  * @return {Boolean} [flag]
  */
 QBNotification.isSupported()
@@ -38,7 +38,7 @@ QBNotification.isSupported()
 
 ```javascript
 /**
- * [needsPermission - check if user add you permission to show Notification]
+ * [needsPermission - check whether a user provided his permission to show notifications or not]
  * @return {Boolean} [flag]
  */
 QBNotification.needsPermission()
