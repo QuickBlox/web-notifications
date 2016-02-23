@@ -46,12 +46,12 @@ QBNotification.needsPermission()
 ```
 
 #### Contribution
-For test we use JSHint, so
+For test we use JSHint, so do
 ```javascript
 npm install -g jshint
 npm test
 ```
-before you push yours changes
+before push yours changes.
 
 #### Helpful links
 [W3](https://www.w3.org/TR/notifications/),
