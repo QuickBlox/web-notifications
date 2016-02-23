@@ -1,4 +1,4 @@
-# web-Notifications (QBNotification)
+# Overview
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
@@ -6,7 +6,7 @@ See QBNotification in action in folder test/*
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
-## Usage
+# Usage
 Module is written like Universal Module Definition, so use everywhere.
 
 Before show a notification you need to get [permission](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission) from a user by
@@ -44,7 +44,7 @@ QBNotification.isSupported()
 QBNotification.needsPermission()
 ```
 
-#### Contribution
+# Contribution
 For test we use JSHint, so do
 ```javascript
 npm install -g jshint
@@ -52,7 +52,10 @@ npm test
 ```
 before push yours changes.
 
-#### Helpful links
+# Helpful links
 [W3](https://www.w3.org/TR/notifications/),
 [whatwg group](https://notifications.spec.whatwg.org/),
 [MDN](https://developer.mozilla.org/en/docs/Web/API/notification)
+
+# License 
+BSD 
