@@ -33,6 +33,8 @@
      *                          + callbacks: onClick, onError, onClose, onShow]
      */
     function QBNotification(title, opts) {
+        var self = this;
+
         if(!QBNotification.isSupported()) {
             throw new Error(ERRORS.no_support);
         }
@@ -53,7 +55,7 @@
             requireInteraction: false,
 
             timeout: 5,
-            debug: false
+            closeOnClick: false
         };
 
         if (typeof opts === 'object') {
@@ -64,7 +66,13 @@
             }
 
             if (isFunction(this.options.onClick)) {
-                this.callbacks.onclick = this.options.onClick;
+                this.callbacks.onclick = function(e) {
+                    self.options.onClick(e);
+
+                    if(self.options.closeOnClick) {
+                        self.close();
+                    }
+                };
             }
 
             if (isFunction(this.options.onError)) {

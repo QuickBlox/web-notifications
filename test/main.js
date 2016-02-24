@@ -40,7 +40,9 @@
             options = {
                 body: form.querySelector('#body').value.trim(),
                 tag: form.querySelector('#tag').value.trim(),
+                icon: form.querySelector('#icon').checked ? 'icon.png' : '',
                 timeout: form.querySelector('#timeout').value.trim(),
+                closeOnClick: form.querySelector('#closeOnClick').checked,
                 onShow: onShowNotificationCb,
                 onClick: onClickNotificationCb,
                 onError: onErrorNotificationCb,

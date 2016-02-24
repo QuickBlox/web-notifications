@@ -13,6 +13,6 @@
         "define": false,
         "module": false,
         "console": false,
-        "Notification": false
+        "QBNotification": false
     }
 }

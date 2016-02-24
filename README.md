@@ -1,10 +1,27 @@
-# Overview
+# web-notifications (QBNotification)
+
+## Overview
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
 See it in action in folder **test**
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
+
+## Install
+
+Install the package via CDN
+```html
+https://cdn.rawgit.com/QuickBlox/web-notifications/master/qbNotification.js
+```
+or as NPM package
+```javascript
+npm i web-notifications --save-dev
+```
+or as Bower component
+```javascript
+bower i web-notifications --save-dev
+```
 
 # Usage
 Module is written like Universal Module Definition, so use everywhere.
@@ -23,6 +40,17 @@ Then you should create instance of QBNotification.
  */
 var notify = new QBNotification(title, options);
 ```
+Example options
+```javascript
+var options = {
+    body: 'Body of notification',
+    tag: 'chatQB',
+    icons: 'image/icons.png',
+    timeout: 7,
+    closeOnClick: true
+}
+```
+
 Then you can show notification via
 ```javascript
 notify.show()
@@ -57,5 +85,5 @@ before push yours changes.
 [whatwg group](https://notifications.spec.whatwg.org/),
 [MDN](https://developer.mozilla.org/en/docs/Web/API/notification)
 
-# License 
-BSD 
+# License
+BSD
