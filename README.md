@@ -1,12 +1,12 @@
-# web-Notifications (QBNotification)
+# Overview
 
 A wrapper for using the [Web Notifications API](https://www.w3.org/TR/notifications/).
 
-See QBNotification in action in folder test/*
+See it in action in folder **test**
 
 [Browsers support see on caniuse](http://caniuse.com/#feat=notifications)
 
-## Usage
+# Usage
 Module is written like Universal Module Definition, so use everywhere.
 
 Before show a notification you need to get [permission](https://developer.mozilla.org/en-US/docs/Web/API/Notification/permission) from a user by
@@ -15,22 +15,22 @@ QBNotification.requestPermission(function(state) {
     console.log('State is changed: ' + state);
 });
 ```
-Then you create instance of QBNotification.
+Then you should create instance of QBNotification.
 ```javascript
 /**
- * @param {[string]} title   [Title of notification. Required value]
+ * @param {[string]} title [Title of notification. Required.]
  * @param {[type]} options [Additional options: standard params + timeout]
  */
 var notify = new QBNotification(title, options);
 ```
-Then you can show notification by
+Then you can show notification via
 ```javascript
 notify.show()
 ```
 Also you have:
 ```javascript
 /**
- * [isSupported - check is Notification available in environment]
+ * [isSupported - check whether Notification API available in environment or not]
  * @return {Boolean} [flag]
  */
 QBNotification.isSupported()
@@ -38,21 +38,24 @@ QBNotification.isSupported()
 
 ```javascript
 /**
- * [needsPermission - check if user add you permission to show Notification]
+ * [needsPermission - check whether a user provided his permission to show notifications or not]
  * @return {Boolean} [flag]
  */
 QBNotification.needsPermission()
 ```
 
-#### Contribution
-For test we use JSHint, so
+# Contribution
+For test we use JSHint, so do
 ```javascript
 npm install -g jshint
 npm test
 ```
-before you push yours changes
+before push yours changes.
 
-#### Helpful links
+# Helpful links
 [W3](https://www.w3.org/TR/notifications/),
 [whatwg group](https://notifications.spec.whatwg.org/),
 [MDN](https://developer.mozilla.org/en/docs/Web/API/notification)
+
+# License 
+BSD 
